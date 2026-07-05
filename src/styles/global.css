@@ -1,0 +1,178 @@
+@import './variables.css';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background-color: var(--color-grey-100);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  color: var(--color-navy-900);
+  letter-spacing: -0.01em;
+}
+
+a {
+  color: var(--color-navy-600);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--color-brass-dark);
+}
+
+/* Visible keyboard focus, everywhere */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+.btn:focus-visible,
+.card:focus-visible {
+  outline: 2px solid var(--color-brass);
+  outline-offset: 2px;
+}
+
+.container-page {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Signature element: the "ledger rule" — a double horizontal line used
+   under section headers and above/below official data, echoing the
+   ruled lines of a real mark-sheet / report card. */
+.ledger-rule {
+  border: 0;
+  border-top: 2px solid var(--color-navy-800);
+  border-bottom: 1px solid var(--color-navy-800);
+  height: 4px;
+  margin: 0.35rem 0 1.75rem;
+  width: 64px;
+}
+.ledger-rule.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.ledger-rule.full {
+  width: 100%;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-brass-dark);
+  font-weight: 500;
+}
+
+.section-heading {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+/* Buttons - restrained, not oversized, square-ish corners typical of office software */
+.btn {
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+  padding: 0.5rem 1.1rem;
+  font-size: 0.92rem;
+}
+.btn-navy {
+  background-color: var(--color-navy-800);
+  border-color: var(--color-navy-800);
+  color: var(--color-white);
+}
+.btn-navy:hover, .btn-navy:focus {
+  background-color: var(--color-navy-700);
+  border-color: var(--color-navy-700);
+  color: var(--color-white);
+}
+.btn-outline-navy {
+  border-color: var(--color-navy-800);
+  color: var(--color-navy-800);
+  background: transparent;
+}
+.btn-outline-navy:hover {
+  background-color: var(--color-navy-800);
+  color: var(--color-white);
+}
+.btn-brass {
+  background-color: var(--color-brass);
+  border-color: var(--color-brass);
+  color: var(--color-white);
+}
+.btn-brass:hover {
+  background-color: var(--color-brass-dark);
+  border-color: var(--color-brass-dark);
+  color: var(--color-white);
+}
+
+/* Cards - subtle, rounded, restrained shadow */
+.card {
+  border: 1px solid var(--color-grey-300);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+}
+
+.card-office {
+  background: var(--color-white);
+  border: 1px solid var(--color-grey-300);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  padding: 1.5rem;
+}
+
+/* Form controls */
+.form-control, .form-select {
+  border-radius: var(--radius-sm);
+  border-color: var(--color-grey-300);
+}
+.form-control:focus, .form-select:focus {
+  border-color: var(--color-navy-600);
+  box-shadow: 0 0 0 0.2rem rgba(21, 49, 84, 0.12);
+}
+label.form-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text-soft);
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-sm);
+  letter-spacing: 0.02em;
+}
+.status-badge.pass {
+  background: var(--color-success-bg);
+  color: var(--color-success);
+}
+.status-badge.fail {
+  background: var(--color-danger-bg);
+  color: var(--color-danger);
+}
+
+/* Print styles for result slips */
+@media print {
+  .no-print { display: none !important; }
+  body { background: #fff; }
+  .print-area {
+    box-shadow: none !important;
+    border: 1px solid #000 !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+}

@@ -1,0 +1,65 @@
+.admin-login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-navy-900);
+  background-image: radial-gradient(circle at 20% 20%, rgba(184, 135, 59, 0.08), transparent 40%),
+    radial-gradient(circle at 80% 80%, rgba(184, 135, 59, 0.06), transparent 40%);
+  padding: 2rem 1rem;
+}
+
+.admin-login-card {
+  background: var(--color-white);
+  width: 100%;
+  max-width: 400px;
+  padding: 2.25rem 2rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-raised);
+}
+
+.admin-login-header {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.admin-login-title {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.admin-login-subtitle {
+  font-size: 0.8rem;
+  color: var(--color-grey-500);
+  margin: 0.1rem 0 0;
+}
+
+.forgot-link {
+  font-size: 0.82rem;
+  color: var(--color-navy-600);
+}
+
+.alert-error {
+  background: var(--color-danger-bg);
+  color: var(--color-danger);
+  border: 1px solid #e6bcb8;
+  border-radius: var(--radius-sm);
+  padding: 0.65rem 0.9rem;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.admin-login-hint {
+  margin-top: 1.25rem;
+  font-size: 0.78rem;
+  color: var(--color-grey-500);
+  text-align: center;
+}
+
+.back-to-site {
+  display: block;
+  text-align: center;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}

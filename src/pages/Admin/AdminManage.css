@@ -1,0 +1,64 @@
+.table-status {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--color-grey-300);
+}
+
+.status-line {
+  font-size: 0.92rem;
+  font-weight: 500;
+}
+.status-exists {
+  color: var(--color-success);
+}
+.status-missing {
+  color: var(--color-danger);
+}
+
+.action-card {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  background: var(--color-white);
+  border: 1px solid var(--color-grey-300);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  padding: 1.1rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.action-card i {
+  font-size: 1.3rem;
+  color: var(--color-navy-700);
+}
+.action-card-title {
+  font-weight: 600;
+  color: var(--color-text);
+  font-size: 0.98rem;
+}
+.action-card-desc {
+  font-size: 0.8rem;
+  color: var(--color-grey-500);
+}
+.action-card:hover:not(:disabled) {
+  border-color: var(--color-navy-700);
+  box-shadow: var(--shadow-raised);
+}
+.action-card.active {
+  border-color: var(--color-brass);
+  box-shadow: 0 0 0 2px rgba(184, 135, 59, 0.25);
+}
+.action-card:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.action-panel {
+  background: var(--color-white);
+  border: 1px solid var(--color-grey-300);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  padding: 1.5rem 1.75rem;
+}

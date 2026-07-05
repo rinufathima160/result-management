@@ -1,0 +1,119 @@
+.result-slip {
+  background: var(--color-white);
+  border: 1px solid var(--color-grey-300);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  padding: 2rem 2.25rem;
+}
+
+.result-slip-letterhead {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.result-slip-school {
+  font-size: 1.35rem;
+  margin: 0;
+}
+
+.result-slip-address {
+  color: var(--color-grey-500);
+  font-size: 0.85rem;
+  margin: 0.15rem 0 0;
+}
+
+.result-slip-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.25rem;
+}
+
+.result-slip-heading h3 {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.result-slip-meta {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  background: var(--color-grey-100);
+  border: 1px solid var(--color-grey-300);
+  border-radius: var(--radius-sm);
+  padding: 0.9rem 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.meta-label {
+  display: block;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-grey-500);
+  margin-bottom: 0.15rem;
+}
+
+.meta-value {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.mono {
+  font-family: var(--font-mono);
+}
+
+.result-table {
+  border: 1px solid var(--color-grey-300);
+}
+
+.result-table thead th {
+  background: var(--color-navy-800);
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.82rem;
+  border: none;
+}
+
+.result-table tbody td {
+  border-color: var(--color-grey-300);
+}
+
+.result-table tfoot th {
+  border-top: 2px solid var(--color-navy-800);
+  background: var(--color-grey-100);
+}
+
+.result-slip-summary {
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px dashed var(--color-grey-300);
+  flex-wrap: wrap;
+}
+
+.summary-value {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-navy-900);
+}
+
+.result-slip-footnote {
+  margin-top: 1.5rem;
+  font-size: 0.75rem;
+  color: var(--color-grey-500);
+  font-style: italic;
+}
+
+@media (max-width: 576px) {
+  .result-slip-meta {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .result-slip {
+    padding: 1.25rem;
+  }
+}

@@ -1,0 +1,38 @@
+/*
+  Design tokens — Greenfield Public School Result Management System
+  Palette: institutional navy + parchment grey + brass accent.
+  Chosen to read like a real school records office, not a startup dashboard.
+*/
+:root {
+  /* Colors */
+  --color-navy-900: #0f2036;   /* deepest navy - header/footer base */
+  --color-navy-800: #153154;   /* primary navy */
+  --color-navy-700: #1f4068;   /* hover / secondary navy */
+  --color-navy-600: #2c5a86;   /* links, active states */
+  --color-brass:    #b8873b;   /* accent - seal, dividers, highlights */
+  --color-brass-dark: #93692a;
+  --color-grey-100: #f4f6f8;   /* page background */
+  --color-grey-200: #e8ecf0;   /* card / table alt background */
+  --color-grey-300: #dbe1e7;   /* borders */
+  --color-grey-500: #7c8894;   /* muted text */
+  --color-white:    #ffffff;
+  --color-text:     #1f2937;
+  --color-text-soft:#3d4a58;
+  --color-success:  #2f6b45;
+  --color-success-bg:#e7f2ea;
+  --color-danger:   #a3291e;
+  --color-danger-bg:#fbeceb;
+  --color-warning-bg:#fdf3e0;
+
+  /* Typography */
+  --font-display: 'Lora', 'Georgia', serif;
+  --font-body: 'Public Sans', 'Segoe UI', Arial, sans-serif;
+  --font-mono: 'Roboto Mono', 'Courier New', monospace;
+
+  /* Layout */
+  --radius-sm: 3px;
+  --radius-md: 6px;
+  --shadow-card: 0 1px 2px rgba(15, 32, 54, 0.06), 0 2px 8px rgba(15, 32, 54, 0.06);
+  --shadow-raised: 0 4px 16px rgba(15, 32, 54, 0.12);
+  --container-max: 1180px;
+}

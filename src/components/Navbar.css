@@ -1,0 +1,48 @@
+.top-strip {
+  background: var(--color-navy-900);
+  color: #cdd8e3;
+  font-size: 0.78rem;
+  padding: 0.35rem 0;
+}
+
+.main-nav {
+  background: var(--color-white);
+  border-bottom: 3px solid var(--color-brass);
+  padding: 0.65rem 0;
+}
+
+.brand-block {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.brand-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--color-navy-900);
+}
+
+.brand-tagline {
+  font-size: 0.72rem;
+  color: var(--color-grey-500);
+  font-family: var(--font-body);
+}
+
+.main-nav .nav-link {
+  color: var(--color-text-soft);
+  font-weight: 500;
+  font-size: 0.92rem;
+  padding: 0.5rem 0.85rem;
+}
+
+.main-nav .nav-link:hover {
+  color: var(--color-navy-800);
+}
